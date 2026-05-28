@@ -1,0 +1,368 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+  <meta charset="UTF-8" />
+  <meta name="viewport" content="width=device-width, initial-scale=1.0"/>
+  <title>Happy 26th Birthday Lewis ❤️</title>
+  <link rel="stylesheet" href="style.css" />
+  <script src="https://cdn.jsdelivr.net/npm/canvas-confetti@1.6.0/dist/confetti.browser.min.js" defer></script>
+</head>
+<body>
+
+  <!-- Custom Cursor -->
+  <div class="cursor-dot"></div>
+  <div class="cursor-ring"></div>
+
+  <!-- Background Atmosphere -->
+  <div class="grid-bg"></div>
+  <div class="ambient-glow-1"></div>
+  <div class="ambient-glow-2"></div>
+
+  <!-- ══════════════════════════════
+       HERO
+  ══════════════════════════════ -->
+  <section id="hero">
+    <div class="reveal">
+      <p class="hero-date">May 29, 2000 → May 29, 2026</p>
+      <h1 class="title-hero">LEWIS<br><em>// 26</em></h1>
+      <p class="hero-subtitle">A Love Letter in Frequencies</p>
+      <button class="hero-btn" id="celebrateBtn"><span>Initiate Celebration ✦</span></button>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       COUNTDOWN
+  ══════════════════════════════ -->
+  <section id="countdown-section">
+    <div class="reveal">
+      <p class="label">Time Until Arrival</p>
+      <h2 class="title-section">The Countdown</h2>
+      <div class="divider"></div>
+      <div class="countdown-wrap">
+        <div class="time-box reveal reveal-delay-1">
+          <h2 id="days">00</h2><span class="unit">Days</span>
+        </div>
+        <div class="time-box reveal reveal-delay-2">
+          <h2 id="hours">00</h2><span class="unit">Hours</span>
+        </div>
+        <div class="time-box reveal reveal-delay-3">
+          <h2 id="mins">00</h2><span class="unit">Mins</span>
+        </div>
+        <div class="time-box reveal" style="transition-delay:0.6s">
+          <h2 id="secs">00</h2><span class="unit">Secs</span>
+        </div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       MUSIC PLAYER
+  ══════════════════════════════ -->
+  <section id="music-section">
+    <div class="reveal">
+      <p class="label">The Soundtrack</p>
+      <h2 class="title-section">Audio Log</h2>
+      <p class="subtitle">Blending your frequencies with mine</p>
+    </div>
+
+    <div class="music-hub reveal">
+
+      <!-- Now Playing -->
+      <div class="music-now-playing">
+        <span class="now-label">Now Playing</span>
+        <div class="now-title" id="nowTitle">Select a track…</div>
+        <div class="now-artist" id="nowArtist">&nbsp;</div>
+      </div>
+
+      <!-- Progress Bar -->
+      <div class="progress-wrap">
+        <div class="progress-bar">
+          <div class="progress-fill" id="progressFill"></div>
+        </div>
+        <div class="time-row">
+          <span id="currentTime">0:00</span>
+          <span id="totalTime">0:00</span>
+        </div>
+      </div>
+
+      <!-- Waveform Visualizer -->
+      <div class="waveform">
+        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+        <div class="wave-bar"></div><div class="wave-bar"></div><div class="wave-bar"></div>
+      </div>
+
+      <!-- Playlist -->
+      <div class="playlist">
+        <div class="song-item" data-idx="0">
+          <span class="song-num">01</span>
+          <div class="song-info">
+            <span class="song-title">After Hours</span>
+            <span class="song-artist">The Weeknd</span>
+          </div>
+          <div class="play-icon">▶</div>
+        </div>
+        <div class="song-item" data-idx="1">
+          <span class="song-num">02</span>
+          <div class="song-info">
+            <span class="song-title">You &amp; Me (Flume Remix)</span>
+            <span class="song-artist">Disclosure</span>
+          </div>
+          <div class="play-icon">▶</div>
+        </div>
+        <div class="song-item" data-idx="2">
+          <span class="song-num">03</span>
+          <div class="song-info">
+            <span class="song-title">Language</span>
+            <span class="song-artist">Porter Robinson</span>
+          </div>
+          <div class="play-icon">▶</div>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SECRET LETTERS
+  ══════════════════════════════ -->
+  <section id="letters-section">
+    <div class="reveal">
+      <p class="label">For You Only</p>
+      <h2 class="title-section">Late Night Frequencies ✦</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="letter-container reveal">
+
+      <div class="secret-card">
+        <button class="secret-btn">
+          Open when you miss me 🌌
+          <span class="secret-arrow">→</span>
+        </button>
+        <div class="secret-message">
+          <p>If you're reading this, then I hope you know that somewhere in this world, there is someone thinking about you with so much love.<br><br>Even on difficult days, you are still deeply loved.</p>
+        </div>
+      </div>
+
+      <div class="secret-card">
+        <button class="secret-btn">
+          Open when life feels too loud ⚡
+          <span class="secret-arrow">→</span>
+        </button>
+        <div class="secret-message">
+          <p>I hope you remember that you do not always have to be strong.<br><br>You are allowed to rest. You are allowed to breathe.<br><br>And I hope one day I can become a place where your heart feels safe.</p>
+        </div>
+      </div>
+
+      <div class="secret-card">
+        <button class="secret-btn">
+          Open when you need reassurance ⭐
+          <span class="secret-arrow">→</span>
+        </button>
+        <div class="secret-message">
+          <p>You are one of the kindest souls I have ever known.<br><br>The world may not always say it enough, but your existence matters.<br><br>And meeting you became one of my favorite things life gave me.</p>
+        </div>
+      </div>
+
+      <div class="secret-card">
+        <button class="secret-btn">
+          Open when you want to know how much I love you ❤️
+          <span class="secret-arrow">→</span>
+        </button>
+        <div class="secret-message">
+          <p>I love your eyes. I love your laugh. I love the way your voice changes when you talk about things you love.<br><br>I love how safe you make me feel.<br><br>And somehow, even after all this time, I still look at you like the universe personally made you for me.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       TYPING LETTER
+  ══════════════════════════════ -->
+  <section id="typing-section">
+    <div class="reveal">
+      <p class="label">Transmission For You</p>
+      <h2 class="title-section">Digital Dispatch 💫</h2>
+      <div class="divider"></div>
+    </div>
+    <div class="typing-wrapper reveal">
+      <span class="typing-corner corner-tl"></span>
+      <span class="typing-corner corner-tr"></span>
+      <span class="typing-corner corner-bl"></span>
+      <span class="typing-corner corner-br"></span>
+      <div id="typingText"></div><span class="cursor-blink"></span>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       ARCHIVE CHAPTERS
+  ══════════════════════════════ -->
+  <section id="archive-section">
+    <div class="reveal">
+      <p class="label">Encrypted Archives</p>
+      <h2 class="title-section">The Love Letters</h2>
+      <div class="divider"></div>
+    </div>
+
+    <div class="archive-wrap reveal">
+
+      <button class="open-btn">
+        Decrypt File: Chapter 01 — Arrival
+        <span class="btn-icon">📁</span>
+      </button>
+      <div class="hidden-content">
+        <div class="story-card">
+          <p>Happy birthday, my love. Twenty-six years ago, the world was given someone extraordinary, though I don't think it fully realizes it yet. But I do. I see it in every small thing you do, every gentle word you speak, every quiet kindness you give so naturally. And loving you has become one of the most beautiful things I have ever known.</p>
+          <p>Lewis, there are people who enter your life quietly, and then there are people like you — the kind that feel less like an arrival and more like fate finally unfolding the way it was always meant to. Loving you feels strangely familiar, like finding a place my soul had been searching for long before we met.</p>
+        </div>
+      </div>
+
+      <button class="open-btn">
+        Decrypt File: Chapter 02 — The Landscape
+        <span class="btn-icon">📁</span>
+      </button>
+      <div class="hidden-content">
+        <div class="story-card">
+          <p>I think my favorite thing about you is your eyes. Those beautiful eyes that somehow carry entire galaxies inside them. When the light catches them just right, it feels as though the stars themselves chose to rest there instead of the sky. I could spend forever looking into them and still find something new each time — softness, warmth, brilliance, kindness.</p>
+          <p>And then there is the way you listen. Truly listen. You make people feel heard in a way that is so rare now. You make me feel understood even in the moments I struggle to understand myself. Your attention feels safe, comforting… like home.</p>
+        </div>
+      </div>
+
+      <button class="open-btn">
+        Decrypt File: Chapter 03 — Bass &amp; Resonance
+        <span class="btn-icon">📁</span>
+      </button>
+      <div class="hidden-content">
+        <div class="story-card">
+          <p>I adore the way your voice changes when you speak about something you love. The way excitement slips into your words until you sound bright and full of wonder. It's one of the purest things about you. I could listen to you talk about your passions, dreams, ideas, or the smallest random thing for hours — simply because your light wakes up everything around you.</p>
+          <p>I love your heart most of all. The way helping people comes naturally to you. The way family means everything to you. The way you love with intention and care. There is something so steady and reassuring about you, Lewis. Something that makes the world feel softer and safer.</p>
+        </div>
+      </div>
+
+      <button class="open-btn">
+        Decrypt File: Chapter 04 — Forever Frequencies
+        <span class="btn-icon">📁</span>
+      </button>
+      <div class="hidden-content">
+        <div class="story-card">
+          <p>And maybe this is silly, but I love how you tower over me, even when I wear heels and pretend I can compete. I love standing beside you and feeling protected in the gentlest way. You carry yourself with such quiet strength and kindness, such effortless grace.</p>
+          <p>As you turn twenty-six, I hope this year gives you every beautiful thing you deserve. I hope your dreams find you at the right time. I hope life is gentle with your heart. Thank you for existing. Thank you for being you. And thank you for letting me love you.</p>
+          <p class="chapter-quote">In every lifetime, it would still be you.</p>
+        </div>
+      </div>
+
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       GALLERY
+  ══════════════════════════════ -->
+  <section id="gallery-section">
+    <div class="reveal">
+      <p class="label">Visual Archive</p>
+      <h2 class="title-section">The Gallery 📸</h2>
+      <p class="subtitle">Tap any photo to expand</p>
+      <div class="divider"></div>
+    </div>
+    <div class="gallery-grid">
+      <div class="polaroid reveal" style="--r:-3deg">
+        <img src="LEWIS_PIC_2.jpeg" alt="Lewis" loading="lazy"/>
+        <div class="polaroid-hover-info"><span>Golden Hour</span></div>
+        <div class="polaroid-caption">Golden Hour // Style</div>
+      </div>
+      <div class="polaroid reveal reveal-delay-1" style="--r:2deg">
+        <img src="LEWIS_PIC_3.jpeg" alt="Lewis" loading="lazy"/>
+        <div class="polaroid-hover-info"><span>In The Zone</span></div>
+        <div class="polaroid-caption">Focus // In The Zone</div>
+      </div>
+      <div class="polaroid reveal reveal-delay-2" style="--r:-1.5deg">
+        <img src="LEWIS_PIC_4.jpeg" alt="Lewis" loading="lazy"/>
+        <div class="polaroid-hover-info"><span>City Presence</span></div>
+        <div class="polaroid-caption">City Stride // Presence</div>
+      </div>
+      <div class="polaroid reveal" style="--r:3deg">
+        <img src="LEWIS_PIC_5.jpeg" alt="Lewis" loading="lazy"/>
+        <div class="polaroid-hover-info"><span>Good Vibes</span></div>
+        <div class="polaroid-caption">Peace // Good Vibes</div>
+      </div>
+      <div class="polaroid reveal reveal-delay-1" style="--r:-2deg">
+        <img src="LEWIS_PIC_6.jpeg" alt="Lewis" loading="lazy"/>
+        <div class="polaroid-hover-info"><span>Above It All</span></div>
+        <div class="polaroid-caption">Elevation // Above It All</div>
+      </div>
+      <div class="polaroid reveal reveal-delay-2" style="--r:1.5deg">
+        <img src="lewis_photo_1.jpeg" alt="Lewis" loading="lazy"/>
+        <div class="polaroid-hover-info"><span>Creative Mind</span></div>
+        <div class="polaroid-caption">Deep // Creative Mind</div>
+      </div>
+      <div class="polaroid reveal" style="--r:-3.5deg">
+        <img src="lewis_photo_2.jpeg" alt="Lewis" loading="lazy"/>
+        <div class="polaroid-hover-info"><span>New Horizons</span></div>
+        <div class="polaroid-caption">Horizon // New Lands</div>
+      </div>
+      <div class="polaroid reveal reveal-delay-1" style="--r:2.5deg">
+        <img src="lewis_photo_3.jpeg" alt="Lewis" loading="lazy"/>
+        <div class="polaroid-hover-info"><span>Pure Energy</span></div>
+        <div class="polaroid-caption">Origins // Where It Began</div>
+      </div>
+      <div class="polaroid reveal reveal-delay-2" style="--r:-1deg">
+        <img src="lewis_photo_4.jpeg" alt="Lewis" loading="lazy"/>
+        <div class="polaroid-hover-info"><span>In Flow</span></div>
+        <div class="polaroid-caption">Artist // In Flow</div>
+      </div>
+      <div class="polaroid reveal" style="--r:4deg">
+        <img src="lewis_photo_5.jpeg" alt="Lewis" loading="lazy"/>
+        <div class="polaroid-hover-info"><span>Pure Joy</span></div>
+        <div class="polaroid-caption">Milestones // Pure Joy</div>
+      </div>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       LIGHTBOX
+  ══════════════════════════════ -->
+  <div class="lightbox" id="lightbox" role="dialog" aria-modal="true">
+    <button class="lightbox-close" id="lightboxClose" aria-label="Close">✕</button>
+    <button class="lightbox-nav lightbox-prev" id="lightboxPrev" aria-label="Previous">‹</button>
+    <img class="lightbox-img" id="lightboxImg" src="" alt="Lewis"/>
+    <button class="lightbox-nav lightbox-next" id="lightboxNext" aria-label="Next">›</button>
+    <div class="lightbox-caption" id="lightboxCap"></div>
+  </div>
+
+  <!-- ══════════════════════════════
+       BIRTHDAY WISH / CANDLES
+  ══════════════════════════════ -->
+  <section id="wish-section">
+    <div class="reveal">
+      <p class="label">Make a Wish</p>
+      <h2 class="title-section">Extinguish the Frequencies</h2>
+      <p class="subtitle">Tap each candle to send your wish into the universe</p>
+    </div>
+
+    <div class="cake-scene reveal">
+      <div class="candles">
+        <div class="candle"><div class="flame"></div></div>
+        <div class="candle"><div class="flame"></div></div>
+        <div class="candle"><div class="flame"></div></div>
+      </div>
+      <div class="cake-body"></div>
+    </div>
+
+    <div id="final-msg">
+      <p class="final-text">I Love You Forever<br>✦ Endless Frequencies ✦</p>
+      <p class="final-sub">Happy 26th Birthday, Lewis</p>
+    </div>
+  </section>
+
+  <!-- ══════════════════════════════
+       SCRIPT
+  ══════════════════════════════ -->
+  <script src="script.js"></script>
+</body>
+</html>
